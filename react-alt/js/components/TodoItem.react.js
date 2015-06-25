@@ -51,24 +51,23 @@ var TodoItem = React.createClass({
         // in the naming of view actions toggleComplete() vs. destroyCompleted().
         return (
             <li
-            className={cx({
-                'completed': todo.complete,
-                'editing': this.state.isEditing
-            })}
-            key={todo.id}>
-            <div className="view">
-            <input
-            className="toggle"
-            type="checkbox"
-            checked={todo.complete}
-            onChange={this._onToggleComplete}
-            />
-            <label onDoubleClick={this._onDoubleClick}>
-            {todo.text}
-            </label>
-            <button className="destroy" onClick={this._onDestroyClick} />
-            </div>
-            {input}
+                className={cx({
+                    'completed': todo.complete,
+                    'editing': this.state.isEditing
+                })}
+                key={todo.id}>
+                <div className="view">
+                    <input
+                        className="toggle"
+                        type="checkbox"
+                        checked={todo.complete}
+                        onChange={this._onToggleComplete} />
+                    <label onDoubleClick={this._onDoubleClick}>
+                        {todo.text}
+                    </label>
+                    <button className="destroy" onClick={this._onDestroyClick} />
+                </div>
+                {input}
             </li>
         );
     },

@@ -54,13 +54,13 @@ var Footer = React.createClass({
 
         return (
             <footer id="footer">
-            <span id="todo-count">
-            <strong>
-            {itemsLeft}
-            </strong>
-            {itemsLeftPhrase}
-            </span>
-            {clearCompletedButton}
+                <span id="todo-count">
+                    <strong>
+                        {itemsLeft}
+                    </strong>
+                    {itemsLeftPhrase}
+                </span>
+                {clearCompletedButton}
             </footer>
         );
     },
