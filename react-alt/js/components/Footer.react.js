@@ -46,10 +46,10 @@ var Footer = React.createClass({
         if (completed) {
             clearCompletedButton =
                 <button
-            id="clear-completed"
-            onClick={this._onClearCompletedClick}>
-            Clear completed ({completed})
-            </button>;
+                    id="clear-completed"
+                    onClick={this._onClearCompletedClick}>
+                    Clear completed ({completed})
+                </button>;
         }
 
         return (
